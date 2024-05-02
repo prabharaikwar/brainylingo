@@ -7,16 +7,19 @@ const DesignOne = ({ stories }) => {
       <div className="p-1 align-item-center">
         <h1 className="text-center mt-4 text-light">Science Fiction Stories</h1>
         <div className="d-flex justify-content-around">
-          <Button variant="primary" className="rounded-pill  px-3">
+          <Button variant="primary" className="rounded-pill  px-3 fs-4">
             New
           </Button>
-          <Button variant="warning" className="rounded-pill text-light">
+          <Button variant="warning" className="rounded-pill text-light fs-4">
             In Progress
           </Button>
-          <Button variant="success" className="rounded-pill ">
+          <Button variant="success" className="rounded-pill fs-4">
             Completed
           </Button>
-          <Button variant="Info" className="rounded-pill text-light">
+          <Button
+            variant="Info"
+            className="rounded-pill text-light fs-4 btn-gradient"
+          >
             Clear All
           </Button>
         </div>

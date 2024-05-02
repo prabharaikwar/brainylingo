@@ -9,21 +9,23 @@ const StoryNavbar = () => {
       expand="lg"
       className="justify-content-between"
     >
-      <Navbar.Brand href="#home">Science Fiction Stories</Navbar.Brand>
+      <Navbar.Brand href="#home">BrainyLingo</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="mx-auto">
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Story Adventure</Nav.Link>
+          <Nav.Link href="#link">Leaderboard</Nav.Link>
           <Nav.Link href="#link">Word Explorer</Nav.Link>
-          <Nav.Link href="#link">Brain Quest</Nav.Link>
+          <Nav.Link href="#link">Daily Quest</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <div>
-        <Button variant="primary" className="mx-2">
+        {/* <Button variant="primary" className="mx-2">
           Sign In
+        </Button> */}
+        <Button variant="outline-primary btn-gradient text-light rounded-pill">
+          Sign Out
         </Button>
-        <Button variant="outline-primary">Sign Up</Button>
       </div>
     </Navbar>
   );

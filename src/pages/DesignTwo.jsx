@@ -6,10 +6,6 @@ const DesignTwo = () => {
   const [stories, setStories] = useState([]);
   const [selectedStory, setSelectedStory] = useState(null);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   const fetchData = () => {
     axios
       .get("https://child.onrender.com/api/sciencefiction")
@@ -24,6 +20,10 @@ const DesignTwo = () => {
       });
   };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   const handleStoryClick = (story) => {
     axios
       .get(`https://child.onrender.com/api/sciencefiction/${story._id}`)
@@ -37,7 +37,27 @@ const DesignTwo = () => {
 
   return (
     <Container className="mt-4">
-      <Row>
+      <h1 className="text-center mb-4 text-light text-color">
+        The Lost City of Future Earth
+      </h1>
+      <div className="d-flex justify-content-around my-2">
+        <Button
+          variant="primary"
+          className="rounded-pill px-3 btn-gradient fs-4"
+        >
+          Word Explorer
+        </Button>
+        <Button variant="warning" className="rounded-pill px-3 fs-4">
+          Story Adventure
+        </Button>
+        <Button
+          variant="gray"
+          className="rounded-pill border text-light px-4 fs-4"
+        >
+          Brain Quest
+        </Button>
+      </div>
+      <Row className="mt-1">
         <Col md={5}>
           {selectedStory && (
             <Card>

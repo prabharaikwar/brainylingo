@@ -54,8 +54,13 @@ const Home = () => {
         <Row>
           <Col>
             <div className="d-flex justify-content-between">
-              <Button onClick={handlePrevious}>Previous</Button>
-              <Button onClick={handleNext} className="border-0 ">
+              <Button
+                onClick={handlePrevious}
+                className="btn-color fs-4 border-0"
+              >
+                Previous
+              </Button>
+              <Button onClick={handleNext} className="border-0 btn-color fs-4">
                 Next
               </Button>
             </div>
