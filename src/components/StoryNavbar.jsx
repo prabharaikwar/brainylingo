@@ -19,10 +19,7 @@ const StoryNavbar = () => {
           <Nav.Link href="#link">Daily Quest</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <div>
-        {/* <Button variant="primary" className="mx-2">
-          Sign In
-        </Button> */}
+      <div>       
         <Button variant="outline-primary btn-gradient text-light rounded-pill">
           Sign Out
         </Button>
